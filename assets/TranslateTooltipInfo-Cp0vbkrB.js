@@ -1,1 +1,0 @@
-import{gz as o,X as e,Y as s,$ as r}from"./index-DcRZY5kx.js";import{r as a}from"./rotate-b1Bu2GWE.js";let t=class extends a{constructor(i){super(i),this.type="translate",this.distance=o}clear(){this.distance=o}};e([s()],t.prototype,"type",void 0),e([s()],t.prototype,"distance",void 0),t=e([r("esri.views.interactive.tooltip.infos.TranslateTooltipInfo")],t);export{t as i};
