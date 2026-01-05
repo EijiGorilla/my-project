@@ -1,1 +1,0 @@
-import{i5 as r,i6 as i}from"./index-glGZSouV.js";import{n as s}from"./PointSnappingHint-BW2uW_p4.js";class a extends r{constructor(t){super({...t,constraint:new i(t.targetPoint)})}get hints(){return[new s(this.targetPoint,this.isDraped,this.domain)]}}export{a as r};

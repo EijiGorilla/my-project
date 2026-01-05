@@ -1,1 +1,0 @@
-import{g as o,n as c,j as l,A as r}from"./index-glGZSouV.js";const d={validationContainer:"validation-container"},v=()=>{},$=({scale:i,status:t,id:n,icon:e,message:s,ref:a})=>l`<div class=${o(d.validationContainer)} ${c(a||v)}><calcite-input-message aria-live=polite .icon=${e} id=${n??r} .scale=${i} .status=${t}>${s}</calcite-input-message></div>`;export{$ as V};
