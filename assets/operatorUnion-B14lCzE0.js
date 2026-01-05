@@ -1,1 +1,0 @@
-import{kn as u,ak as o}from"./index-DWB-5FUE.js";const t=new u;function c(n,e,r){return t.execute(n,e,r,null)}function a(n,e){return t.executeMany(new o(n),e,null).next()}function l(){return t.supportsCurves()}export{a as o,c as r,l as s};

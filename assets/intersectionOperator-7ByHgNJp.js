@@ -1,1 +1,0 @@
-import{kk as s,kl as c,kE as o,km as i,cR as m}from"./index-DWB-5FUE.js";import{o as u,u as f}from"./operatorIntersection-DXFJUbQ4.js";function l(a,r){const t=s(a),e=t.getSpatialReference();return c(u(t.getGeometry(),o(r),e),e)}function x(a,r){const[t,e]=i(a);return f(t,o(r),e,7).map(n=>c(n,e)).filter(m)}export{l as execute,x as executeMany};

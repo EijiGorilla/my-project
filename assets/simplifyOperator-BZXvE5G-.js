@@ -1,1 +1,0 @@
-import{kk as s,kl as n,kR as o,km as c,kS as f,kT as i}from"./index-DWB-5FUE.js";function k(t){const e=s(t),a=e.getSpatialReference();return n(o(e.getGeometry(),a,!1),a)}function l(t){const[e,a]=c(t);return f(e,a,!1).map(r=>n(r,a))}function m(t){const e=s(t);return i(e.getGeometry(),e.getSpatialReference(),!1)}export{k as execute,l as executeMany,m as isSimple};
