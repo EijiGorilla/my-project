@@ -58,7 +58,7 @@ const UtilityChart = () => {
   }, []);
 
   // utility point
-  const chartRef = useRef<unknown | any | undefined>({});
+  // const chartRef = useRef<unknown | any | undefined>({});
   const [pointChartData, setPointChartData] = useState([]);
   const chartID = "utility-point-bar";
 
@@ -161,7 +161,7 @@ const UtilityChart = () => {
         height: am5.percent(100),
       })
     );
-    chartRef.current = chart;
+    // chartRef.current = chart;
 
     const yRenderer = am5xy.AxisRendererY.new(root, {
       inversed: true,
@@ -170,7 +170,7 @@ const UtilityChart = () => {
       am5xy.CategoryAxis.new(root, {
         categoryField: "category",
         renderer: yRenderer,
-        bullet: function (root, dataItem: any) {
+        bullet: function (root, _axis: any, dataItem: any) {
           return am5xy.AxisBullet.new(root, {
             location: 0.5,
             sprite: am5.Picture.new(root, {
@@ -179,7 +179,7 @@ const UtilityChart = () => {
               centerY: am5.p50,
               centerX: am5.p50,
               x: chartIconPositionX,
-              src: dataItem.dataContext?.icon,
+              src: dataItem.dataContext.icon,
             }),
           });
         },
@@ -460,7 +460,7 @@ const UtilityChart = () => {
       am5xy.CategoryAxis.new(root2, {
         categoryField: "category",
         renderer: yRenderer,
-        bullet: function (root2, dataItem: any) {
+        bullet: function (root2, _axis: any, dataItem: any) {
           return am5xy.AxisBullet.new(root2, {
             location: 0.5,
             sprite: am5.Picture.new(root2, {
@@ -764,7 +764,7 @@ const UtilityChart = () => {
       <div
         id={chartID}
         style={{
-          // width: chart_width,
+          width: chart_width,
           height: "31vh",
           backgroundColor: "rgb(0,0,0,0)",
           color: "white",

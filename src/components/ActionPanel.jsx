@@ -58,10 +58,10 @@ function ActionPanel() {
         position="start"
         id="left-shell-panel"
         displayMode="dock"
-        style={{
-          borderStyle: "solid",
-          borderLeftWidth: 1,
-        }}
+        // style={{
+        //   borderStyle: "solid",
+        //   borderLeftWidth: 1,
+        // }}
       >
         <CalciteActionBar
           slot="action-bar"

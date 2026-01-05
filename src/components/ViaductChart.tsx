@@ -139,7 +139,7 @@ const ViaductChart = () => {
       am5xy.CategoryAxis.new(root, {
         categoryField: "category",
         renderer: yRenderer,
-        bullet: function (root, dataItem: any) {
+        bullet: function (root, _axis: any, dataItem: any) {
           return am5xy.AxisBullet.new(root, {
             location: 0.5,
             sprite: am5.Picture.new(root, {

@@ -27,6 +27,7 @@ function UndergroundSwitch() {
           color: "white",
           borderStyle: "solid",
           borderColor: "grey",
+          borderWidth: "0.5px",
           backgroundColor: "#2b2b2b",
           paddingLeft: 5,
           paddingRight: 5,
