@@ -179,7 +179,7 @@ const UtilityChart = () => {
               centerY: am5.p50,
               centerX: am5.p50,
               x: chartIconPositionX,
-              src: dataItem.dataContext.icon,
+              src: dataItem.dataContext?.icon,
             }),
           });
         },
