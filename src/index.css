@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 
-arcgis-map {
+arcgis-scene {
   display: block;
   height: 100vh;
 }
