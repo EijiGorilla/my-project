@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# ... other ignored files
+dist/assets/_commonjsHelpers-DCkdB7M8.js
