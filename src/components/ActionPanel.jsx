@@ -30,7 +30,6 @@ function ActionPanel() {
   const directLineMeasure = document.querySelector(
     "arcgis-direct-line-measurement-3d"
   );
-  const areaMeasure = document.querySelector("arcgis-area-measurement-3d");
 
   useEffect(() => {
     if (activeWidget) {
@@ -41,9 +40,6 @@ function ActionPanel() {
       directLineMeasure
         ? directLineMeasure.clear()
         : console.log("Line measure is cleared");
-      areaMeasure
-        ? areaMeasure.clear()
-        : console.log("Area measure is cleared.");
     }
 
     if (nextWidget !== activeWidget) {
@@ -145,7 +141,7 @@ function ActionPanel() {
             }}
           ></CalciteAction>
 
-          <CalciteAction
+          {/* <CalciteAction
             data-action-id="area-measure"
             icon="measure-area"
             text="Area Measurement"
@@ -154,7 +150,7 @@ function ActionPanel() {
               setNextWidget(event.target.id);
               setActiveWidget(nextWidget === activeWidget ? null : nextWidget);
             }}
-          ></CalciteAction>
+          ></CalciteAction> */}
 
           <CalciteAction
             data-action-id="information"
@@ -232,7 +228,7 @@ function ActionPanel() {
           ></arcgis-direct-line-measurement-3d>
         </CalcitePanel>
 
-        <CalcitePanel
+        {/* <CalcitePanel
           heading="Area Measure"
           height="l"
           width="l"
@@ -245,7 +241,7 @@ function ActionPanel() {
             referenceElement="arcgis-scene"
             icon="measure-area"
           ></arcgis-area-measurement-3d>
-        </CalcitePanel>
+        </CalcitePanel> */}
 
         <CalcitePanel heading="Description" data-panel-id="information" hidden>
           {nextWidget === "information" ? (
