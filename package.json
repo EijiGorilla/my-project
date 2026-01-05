@@ -10,7 +10,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "copy-assets": "cp -r node_modules/@arcgis/core/assets public/assets/arcgis"
   },
   "dependencies": {
     "@arcgis/core": "^4.34.8",
