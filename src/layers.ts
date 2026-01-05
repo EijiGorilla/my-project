@@ -34,7 +34,6 @@ import {
   lotStatusLabel,
   lotUseArray,
   nloStatusField,
-  nloStatusLabel,
   nloStatusSymbolRef,
   statusStructureLabel,
   statusStructureQuery,
@@ -1056,14 +1055,14 @@ export const structureLayer = new FeatureLayer({
 // NLO Layer
 const symbolSize = 30;
 
-const uniqueValueInfosNlo = nloStatusLabel.map((index: any) => {
-  return Object.assign({
-    value: index + 1,
+const uniqueValueInfosNlo = [
+  {
+    value: 1,
     symbol: new PointSymbol3D({
       symbolLayers: [
         new IconSymbol3DLayer({
           resource: {
-            href: nloStatusSymbolRef[index],
+            href: nloStatusSymbolRef[0],
           },
           size: symbolSize,
           outline: {
@@ -1073,8 +1072,112 @@ const uniqueValueInfosNlo = nloStatusLabel.map((index: any) => {
         }),
       ],
     }),
-  });
-});
+  },
+  {
+    value: 2,
+    symbol: new PointSymbol3D({
+      symbolLayers: [
+        new IconSymbol3DLayer({
+          resource: {
+            href: nloStatusSymbolRef[1],
+          },
+          size: symbolSize,
+          outline: {
+            color: "white",
+            size: 2,
+          },
+        }),
+      ],
+    }),
+  },
+  {
+    value: 3,
+    symbol: new PointSymbol3D({
+      symbolLayers: [
+        new IconSymbol3DLayer({
+          resource: {
+            href: nloStatusSymbolRef[2],
+          },
+          size: symbolSize,
+          outline: {
+            color: "white",
+            size: 2,
+          },
+        }),
+      ],
+    }),
+  },
+  {
+    value: 4,
+    symbol: new PointSymbol3D({
+      symbolLayers: [
+        new IconSymbol3DLayer({
+          resource: {
+            href: nloStatusSymbolRef[3],
+          },
+          size: symbolSize,
+          outline: {
+            color: "white",
+            size: 2,
+          },
+        }),
+      ],
+    }),
+  },
+  {
+    value: 5,
+    symbol: new PointSymbol3D({
+      symbolLayers: [
+        new IconSymbol3DLayer({
+          resource: {
+            href: nloStatusSymbolRef[4],
+          },
+          size: symbolSize,
+          outline: {
+            color: "white",
+            size: 2,
+          },
+        }),
+      ],
+    }),
+  },
+  {
+    value: 6,
+    symbol: new PointSymbol3D({
+      symbolLayers: [
+        new IconSymbol3DLayer({
+          resource: {
+            href: nloStatusSymbolRef[5],
+          },
+          size: symbolSize,
+          outline: {
+            color: "white",
+            size: 2,
+          },
+        }),
+      ],
+    }),
+  },
+];
+// const uniqueValueInfosNlo = nloStatusLabel.map((status: any, index: any) => {
+//   return Object.assign({
+//     value: index + 1,
+//     symbol: new PointSymbol3D({
+//       symbolLayers: [
+//         new IconSymbol3DLayer({
+//           resource: {
+//             href: nloStatusSymbolRef[index],
+//           },
+//           size: symbolSize,
+//           outline: {
+//             color: "white",
+//             size: 2,
+//           },
+//         }),
+//       ],
+//     }),
+//   });
+// });
 const nloRenderer = new UniqueValueRenderer({
   field: nloStatusField,
   uniqueValueInfos: uniqueValueInfosNlo,
