@@ -12,10 +12,7 @@ export default function MapDisplay() {
       viewingMode="local"
       ground="world-elevation"
     >
-      <arcgis-elevation-profile
-        slot="bottom-right"
-        unit="millimeters"
-      ></arcgis-elevation-profile>
+      <arcgis-elevation-profile slot="bottom-right"></arcgis-elevation-profile>
       <arcgis-direct-line-measurement-3d slot="bottom-left"></arcgis-direct-line-measurement-3d>
     </arcgis-scene>
   );
